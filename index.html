@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Lawaklah | Modern Storefront UI</title>
+
+    <!-- SEO -->
+    <meta name="description"
+        content="Lawaklah adalah modern storefront dengan desain unik, rapi, dan premium. Jelajahi koleksi hardware, wireless, dan lainnya.">
+    <meta name="author" content="Lawaklah">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Lawaklah Webnya">
+    <meta property="og:url" content="https://smurfsakun199-raul.github.io/web-lawak">
+    <meta property="og:image" content="https://smurfsakun199-raul.github.io/web-lawak/lawaklah.png">
+    <meta property="og:description" content="Modern UI shop tol01">
+    <meta property="og:type" content="website">
+    <meta property="og:image:alt" content="Preview Lawaklah Webnya">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="hay.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- Preview Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://smurfsakun199-raul.github.io/web-lawak">
+    <meta name="twitter:title" content="Lawaklah - Webnya wkwkw">
+    <meta name="twitter:description" content="Modern UI shop experience">
+    <meta name="twitter:image" content="https://smurfsakun199-raul.github.io/web-lawak/lawaklah.png">
+
+    <!-- JSON/ld -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      "name": "Lawaklah Product Collection",
+      "itemListElement": [
+        {
+          "@type": "Product",
+          "name": "CPU",
+          "description": "Kinerja optimal untuk berbagai kebutuhan komputasi",
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.8",
+            "reviewCount": "658"
+          }
+        },
+        {
+          "@type": "Product",
+          "name": "GPU",
+          "description": "Rendering grafis performa tinggi",
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.7",
+            "reviewCount": "621"
+          }
+        }
+      ]
+    }
+    </script>
+</head>
+
+<body>
+    <header>
+        <nav class="navigation backdrop-filter-blur pos-sticky pos-top border-bottom" aria-label="Main Navigation">
+            <div class="max-width-nav dis-flex justify-sb margin-auto">
+                <div class="dis-flex">
+                    <div class="dis-flex">
+                        <i class="font-size-24px fa-solid fa-shop" aria-hidden="true"></i>
+                    </div>
+                    <div>
+                        <h1 class="margin font-size-16px letter-space--1">Lawaklah</h1>
+                        <p class="margin font-size-10px">Modern Experience Visual</p>
+                    </div>
+                </div>
+                <div class="item-font-link dis-flex txt-decoration-none gap-14">
+                    <a href="#item-cl" title="Lihat koleksi produk kami" class="item-link"><i
+                            class="fa-brands fa-blackberry"></i> Collections</a>
+                    <a href="" class="item-link"><i class="fa-solid fa-fill"></i> Style</a>
+                    <a href="" class="item-link"><i class="fa-regular fa-gem"></i> Limited</a>
+                </div>
+                <div class="dis-flex">
+                    <button type="button" id="btn-cart"
+                        class="btn-navi pos-relative font-size-12px bg-dark border-op border-radius-16 padding-default"><i
+                            class="fa-solid fa-bag-shopping"></i>
+                        Cart</button>
+                    <button type="button" id="toggle-mode"
+                        class="btn-navi pos-relative font-size-12px bg-dark border-op border-radius-16"><i
+                            class="fa-regular fa-sun"></i> Themes</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!--Section First Open-->
+        <!---->
+        <section aria-labelledby="hero-title" class="dis-flex padding-top-70 align-items-base padding-20-20">
+            <!--Glow Effects-->
+            <div class="glow wing"></div>
+            <div class="glow wing1"></div>
+            <div class="glow wing2"></div>
+            <div class="glow-fixed wing6"></div>
+            <div class="glow-fixed wing7"></div>
+            <!--Content for Opening-->
+            <div class="dis-flex-scx-grid gap-24 max-width-1120">
+                <div class="reveal dis-grid">
+                    <div>
+                        <span class="font-size-10px border-radius-default"><i
+                                class="fa-solid fa-wand-magic-sparkles"></i> Elegant
+                            Commerce</span>
+                    </div>
+                    <div class="open-text">
+                        <h2 class="font-size-40px margin" id="hero-title">Storefront yang terasa <span
+                                class="glow-txt">Unik,
+                                Rapi,</span> dan <span class="glow-txt">Premium</span>.</h2>
+                        <p class="p-gry-custom">Desain ini memadukan layout yang bersih, kartu produk yang tegas,
+                            animasi halus, serta nuansa
+                            visual
+                            yang hangat dan
+                            nyaman untuk dilihat.</p>
+                    </div>
+                    <div class="slide-bottom dis-flex justify-str gap-14 z-index-1">
+                        <form class="width-65">
+                            <input id="input-search-items" type="search"
+                                class="inp-explore width-100 padding-default border-radius-16 bg-op-white backdrop-filter-blur"
+                                placeholder="Cari Apaan wkwkw?">
+                        </form>
+                        <div>
+                            <button type="button" onclick="scrolltoId('explore')" id="id-btn-explore"
+                                class="btn-explore bg-dark border-op border-radius-default cursor-pnt">Explore
+                                Style <i class="fa-solid fa-arrow-right"></i></button>
+                        </div>
+                        <div id="toggle-search" class="cursor-pnt">
+                            <i id="icon-toggle-search" class="icn-arw fa-solid fa-angle-down"></i>
+                        </div>
+                    </div>
+                    <div class="dis-grid justify-left padding-top-30 grid-temp-clm-r3 gap-14">
+                        <div class="reveal-right">
+                            <div class="card-advanced border-op border-radius-default">
+                                <i class="fa-solid fa-truck-fast padding-bottom-16"></i>
+                                <h2 class="font-size-11px margin">Fast Delivery</h2>
+                                <p class="font-size-11px">Pengiriman cepat dan terpantau</p>
+                            </div>
+                        </div>
+                        <div class="reveal-right-trs-1s">
+                            <div class="card-advanced border-op border-radius-default">
+                                <i class="fa-solid fa-check padding-bottom-16"></i>
+                                <h2 class="font-size-11px margin">Secured Checkout</h2>
+                                <p class="font-size-11px">Transaksi Teraman dan stabil</p>
+                            </div>
+                        </div>
+                        <div class="reveal-right-trs-1t2s">
+                            <div class="card-advanced border-op border-radius-default">
+                                <i class="fa-regular fa-star padding-bottom-16"></i>
+                                <h2 class="font-size-11px margin">Curated Items</h2>
+                                <p class="font-size-11px">Pilihan produk yang terkurasi</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="reveal-right">
+                    <div
+                        class="card bg-op-white br-op-ex card-ExLarge border-radius-default backdrop-filter-blur max-width-340">
+                        <div class="card-large bg-op-dark border-radius-default">
+                            <div class="dis-flex justify-sb">
+                                <p class="font-size-11px">Featured launch</p>
+                                <span class="font-size-11px"><i class="fa-regular fa-star"></i> 4.8 Rate</span>
+                            </div>
+
+                            <p class="margin font-size-24px padding-bottom-28">Newbie Edition</p>
+                            <p class="font-size-11px">Limited drop</p>
+                            <p class="margin padding-bottom-28">Curated set</p>
+                            <p class="font-size-11px width-75">Tampilan editorial dengan depth lembut, highlight
+                                glassmorphism, dan fokus visual yang jelas.
+                            </p>
+                        </div>
+                        <div class="dis-flex padding-top-30 gap-50">
+                            <div class="sub-card">
+                                <p class="font-size-12px p-gry-custom">UI</p>
+                                <p class="font-size-14px">High</p>
+                            </div>
+
+                            <div class="sub-card">
+                                <p class="font-size-12px p-gry-custom">Motion</p>
+                                <p class="font-size-14px">Smooth</p>
+                            </div>
+
+                            <div class="sub-card">
+                                <p class="font-size-12px p-gry-custom">Mood</p>
+                                <p class="font-size-14px">Flex</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Marjinal to Cart-->
+        <!---->
+        <!---->
+        <aside id="asidecart" aria-labelledby="cart-title"
+            class="pos-fixed slide-right pos-top height-100ps width-100 max-width-24rm backdrop-filter-blur">
+            <header>
+                <div class="dis-flex justify-sb padding-20-20">
+                    <div>
+                        <div>
+                            <h2 id="cart-title" class="margin font-size-12px">Shop cart</h2>
+                        </div>
+                        <div class="dis-flex justify-left">
+                            <p class="margin">0</p>
+                            <p class="margin"> Items</p>
+                        </div>
+                    </div>
+                    <div id="close-cart" class="x-icon-dis-flex dis-flex cursor-pnt">
+                        <i class="fa-solid fa-x"></i>
+                    </div>
+                </div>
+                <div class="padding-20-20">
+                    <div>
+                        <p class="font-size-12px">Keranjang Kosong</h2>
+                    </div>
+                </div>
+                <div class="pos-bottom border-top">
+                    <div class="dis-flex justify-sb padding-0-20">
+                        <h2 class="font-size-12px">Subtotal</h2>
+                        <p>0</p>
+                    </div>
+                    <div class="dis-flex padding-0-20 max-width-1000">
+                        <button class="width-100 bg-white border-op border-radius-16 padding-4-20">Checkout</button>
+                    </div>
+                </div>
+            </header>
+        </aside>
+
+        <!--ID Target-->
+        <div id="item-cl"></div>
+        <!--ID Target-->
+        <div id="explore"></div>
+        <!--Collections in Shop-->
+        <!---->
+        <!---->
+        <section id="idshop" aria-labelledby="collections-title" class="padding-20-20 reveal">
+            <div class="glow wing3"></div>
+            <div class="glow wing4"></div>
+            <div class="glow wing5"></div>
+            <div class="navigation width-100">
+                <div class="dis-flex-scx max-width-1160 margin-auto">
+                    <div class="dis-flex">
+                        <div>
+                            <i class="font-size-24px fa-solid fa-store"></i>
+                        </div>
+                        <div>
+                            <h2 id="collections-title" class="margin font-size-11px p-gry-custom">Collections</h2>
+                            <p class="margin">Browse with clean filter</p>
+                        </div>
+                    </div>
+                    <div class="dis-flex width-30">
+                        <input id="input-search-items1" type="search"
+                            class="inp-explore width-100 padding-default border-radius-16 bg-op-white backdrop-filter-blur"
+                            placeholder="Cari Apaan wkwkw?">
+                    </div>
+                    <div class="dis-flex gap-14">
+                        <button id="all-item" class="btn-items btn-small bg-white dark border-op border-radius-16"
+                            data-filter="all"><i class="fa-solid fa-layer-group"></i> All</button>
+                        <button id="items-hardware" class="btn-items btn-small bg-white border-op border-radius-16"
+                            data-filter="hardware"><i class="fa-solid fa-computer"></i> Hardware</button>
+                        <button id="items-flex" class="btn-items btn-small bg-white border-op border-radius-16"
+                            data-filter="flex"><i class="fa-solid fa-arrows-spin"></i> Flex</button>
+                        <button id="items-wireless" class="btn-items btn-small bg-white border-op border-radius-16"
+                            data-filter="wire"><i class="fa-solid fa-headphones"></i> Wireless</button>
+                        <button id="items-time" class="btn-items btn-small bg-white border-op border-radius-16"
+                            data-filter="time"><i class="fa-regular fa-hourglass-half"></i> Time</button>
+                    </div>
+                </div>
+            </div>
+            <div class="max-width-1120 margin-auto padding-top-30">
+                <div class="dis-grid grid-temp-clm-r3-2 gap-24">
+                    <div class="dis-blk-itm-hard search-items card-advanced-purple border-op-purple border-radius-default"
+                        data-category="hardware">
+                        <article class="text">
+                            <header class="dis-flex justify-sb">
+                                <h3 class="font-size-12px">Hardware</h3>
+                                <span class="font-size-12px"><i class="fa-regular fa-star"></i> 4.8</span>
+                            </header>
+                            <div class="text">
+                                <h4><i class="fa-solid fa-display"></i> Cpu</h4>
+                                <p class="font-size-12px">Cpu</p>
+                                <p class="font-size-14px">Kinerja yang optimal dalam melakukan tugas.</p>
+                            </div>
+                        </article>
+                        <footer class="dis-flex justify-sb">
+                            <span class="font-size-12px"><i class="fa-solid fa-users"></i> 658</span>
+                            <button class="bg-dark border-op border-radius-default padding-4-20">Add to
+                                Cart</button>
+                        </footer>
+                    </div>
+                    <div class="dis-blk-itm-hard search-items card-advanced-pink border-op-pink border-radius-default"
+                        data-category="hardware">
+                        <article class="text">
+                            <header class="dis-flex justify-sb">
+                                <h3 class="font-size-12px">Hardware</h3>
+                                <span class="font-size-12px"><i class="fa-regular fa-star"></i> 4.7</span>
+                            </header>
+                            <div class="text">
+                                <h4><i class="fa-solid fa-display"></i> Gpu</h4>
+                                <p class="font-size-12px">Gpu</p>
+                                <p class="font-size-14px">Rendering yang mendukung resolusi Tinggi.</p>
+                            </div>
+                        </article>
+                        <footer class="dis-flex justify-sb">
+                            <span class="font-size-12px"><i class="fa-solid fa-users"></i> 621</span>
+                            <button class="bg-dark border-op border-radius-default padding-4-20">Add to
+                                Cart</button>
+                        </footer>
+                    </div>
+                    <div class="dis-blk-itm-flx search-items card-advanced-blue border-op-blue border-radius-default"
+                        data-category="flex">
+                        <article class="text">
+                            <header class="dis-flex justify-sb">
+                                <h3 class="font-size-12px">Flex</h3>
+                                <span class="font-size-12px"><i class="fa-regular fa-star"></i> 5</span>
+                            </header>
+                            <div class="text">
+                                <h4><i class="fa-solid fa-screwdriver-wrench"></i> Tool</h4>
+                                <p class="font-size-12px">Tool</p>
+                                <p class="font-size-14px">Memudahkan proses Aktifitas menjadi lebih baik.</p>
+                            </div>
+                        </article>
+                        <footer class="dis-flex justify-sb">
+                            <span class="font-size-12px"><i class="fa-solid fa-users"></i> 874</span>
+                            <button class="bg-dark border-op border-radius-default padding-4-20">Add to
+                                Cart</button>
+                        </footer>
+                    </div>
+                    <div class="dis-blk-itm-flx search-items card-advanced-pink border-op-pink border-radius-default"
+                        data-category="flex">
+                        <article class="text">
+                            <header class="dis-flex justify-sb">
+                                <h3 class="font-size-12px">Flex</h3>
+                                <span class="font-size-12px"><i class="fa-regular fa-star"></i> 4.3</span>
+                            </header>
+                            <div class="text">
+                                <h4><i class="fa-solid fa-book"></i> Book</h4>
+                                <p class="font-size-12px">Book</p>
+                                <p class="font-size-14px">Mendapatkan informasi yang Cepat dan Akurat.</p>
+                            </div>
+                        </article>
+                        <footer class="dis-flex justify-sb">
+                            <span class="font-size-12px"><i class="fa-solid fa-users"></i> 693</span>
+                            <button class="bg-dark border-op border-radius-default padding-4-20">Add to
+                                Cart</button>
+                        </footer>
+                    </div>
+                    <div class="dis-blk-itm-wire search-items card-advanced-blue border-op-blue border-radius-default"
+                        data-category="wire">
+                        <article class="text">
+                            <header class="dis-flex justify-sb">
+                                <h3 class="font-size-12px">Wireless</h3>
+                                <span class="font-size-12px"><i class="fa-regular fa-star"></i> 4.9</span>
+                            </header>
+                            <div class="text">
+                                <h4><i class="fa-solid fa-headphones"></i> Headphone</h4>
+                                <p class="font-size-12px">Headphone</p>
+                                <p class="font-size-14px">Kualitas Suara dan Voice yang stabil serta Fleksibel.</p>
+                            </div>
+                        </article>
+                        <footer class="dis-flex justify-sb">
+                            <span class="font-size-12px"><i class="fa-solid fa-users"></i> 548</span>
+                            <button class="bg-dark border-op border-radius-default padding-4-20">Add to
+                                Cart</button>
+                        </footer>
+                    </div>
+                    <div class="dis-blk-itm-time search-items card-advanced-purple border-op-purple border-radius-default"
+                        data-category="time">
+                        <article class="text">
+                            <header class="dis-flex justify-sb">
+                                <h3 class="font-size-12px">Time</h3>
+                                <span class="font-size-12px"><i class="fa-regular fa-star"></i> 4.6</span>
+                            </header>
+                            <div class="text">
+                                <h4><i class="fa-solid fa-question"></i> Asv</h4>
+                                <p class="font-size-12px">Ex</p>
+                                <p class="font-size-14px">Produk dirancang untuk eksplorasi konsep dan efisiensi
+                                    penggunaan.</p>
+                            </div>
+                        </article>
+                        <footer class="dis-flex justify-sb">
+                            <span class="font-size-12px"><i class="fa-solid fa-users"></i> 327</span>
+                            <button class="bg-dark border-op border-radius-default padding-4-20">Add to
+                                Cart</button>
+                        </footer>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--About on Web-->
+        <!---->
+        <section aria-labelledby="about-title" class="padding-20-20">
+            <div class="max-width-1120 dis-grid grid-temp-clm-r2 align-items-base margin-auto gap-24">
+                <div class="card-large border-op-pink padding-30-30 border-op-pink border-radius-16">
+                    <div>
+                        <h2 id="about-title" class="font-size-12px p-gry-custom margin padding-bottom-8">Why this works
+                        </h2>
+                        <p class="margin font-size-24px padding-bottom-16">Clear hierarchy, soft motion, premium feel ✨
+                        </p>
+
+                        <p class="p-gry-custom font-size-12px padding-bottom-16">Fokus utamanya adalah keterbacaan,
+                            spacing yang lega, dan
+                            komposisi yang
+                            terasa editorial.
+                            Animasi dipakai secukupnya
+                            agar UI terasa hidup tanpa mengganggu.</p>
+                    </div>
+                    <div class="dis-flex flex-wrap justify-left">
+                        <span class="padding-0-20 border-op border-radius-16 font-size-10px bg-white">Responsive
+                            layout</span>
+                        <span class="padding-0-20 border-op border-radius-16 font-size-10px bg-white">Smooth
+                            transitions</span>
+                        <span class="padding-0-20 border-op border-radius-16 font-size-10px bg-white">Unique
+                            visual
+                            identity</span>
+                        <span class="padding-0-20 border-op border-radius-16 font-size-10px bg-white">Comfortable
+                            browsing</span>
+                    </div>
+                </div>
+                <div class="card-large border-op padding-30-30 border-op-purple border-radius-16">
+                    <div class="dis-flex justify-sb padding-bottom-36">
+                        <div class="">
+                            <div>
+                                <h3 class="font-size-12px p-gry-custom margin padding-bottom-8">Cart summary</h3>
+                            </div>
+                            <div class="dis-flex justify-left">
+                                <p class="margin">0</p>
+                                <p class="margin">Items</p>
+                            </div>
+                        </div>
+                        <div>
+                            <button id="btn-cart-footer"
+                                class="btn-small bg-dark border-op border-radius-default font-size-10px">Open
+                                Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="card-advanced border-op border-radius-default">
+                        <p class="font-size-11px">Belum ada item di keranjang. Pilih produk yang menarik perhatian.</p>
+                    </div>
+                    <div class="padding-bottom-36"></div>
+                </div>
+            </div>
+        </section>
+
+        <!--Footer in Web-->
+        <!---->
+        <!---->
+        <!---->
+        <footer class="padding-20-20 dis-flex">
+            <p class="font-size-12px">Kegabutan Badut 2026 Lawakcik</p>
+        </footer>
+    </main>
+
+    <script src="hey.js"></script>
+</body>
+
+</html>
