@@ -14,6 +14,17 @@ idtoggletheme.addEventListener('click', () => {
         (localStorage.setItem('theme', 'light'), idtoggletheme.innerHTML = '<i class="fa-regular fa-sun"></i> Light');
 });
 
+// Contact //
+
+document.getElementById('toggle-contact').addEventListener('click', () => {
+    document.querySelector('.icn-contact-arw').classList.toggle('rotate');
+    document.querySelector('.icn-contact-items').classList.toggle('dis');
+});
+
+document.getElementById('btn-contact').addEventListener('click', () => {
+    document.querySelector('.icn-contact-items').classList.toggle('dis');
+});
+
 // Scroll To Id//
 
 function scrolltoId(idtarget) {

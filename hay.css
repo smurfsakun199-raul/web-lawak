@@ -12,6 +12,9 @@
     --bg-pink: rgb(218, 43, 209);
     --bg-cyan: rgb(36, 189, 209);
     --bg-purple: rgb(128, 36, 204);
+    --bg-lineargraduent-toright-pink-blue: #e14dc3, #4c76da;
+    --bg-radialgradient-center-purple-white: #e14dc3,
+        #ffffff;
     --br: black;
     --br-op-ex: #fdfdfd2b;
     --br-op: rgba(0, 0, 0, 0.274);
@@ -55,6 +58,9 @@ body.dark {
     --itm-link: white, black;
     --br-op-ex: #0000002b;
     --bg-card: white;
+    --bg-lineargraduent-toright-pink-blue: #4c76da, #e14dc3;
+    --bg-radialgradient-center-purple-white: #e14dc3,
+        #000000;
     --br-op: rgba(255, 255, 255, 0.274);
     --br-bottom-op: rgba(255, 255, 255, 0.12);
     --btn-explore: rgba(255, 255, 255, 0.92);
@@ -112,6 +118,10 @@ body.dark {
     flex-wrap: wrap;
 }
 
+.flex-direc-clm {
+    flex-direction: column;
+}
+
 .align-items-fs {
     align-items: flex-start;
 }
@@ -157,6 +167,10 @@ body.dark {
 
 .pos-top {
     top: 0;
+}
+
+.top-50px {
+    top: 50px;
 }
 
 .pos-bottom {
@@ -216,6 +230,30 @@ body.dark {
 }
 
 /* padding */
+
+.padding-2-8 {
+    padding: 2px 8px;
+}
+
+.padding-4 {
+    padding: 4px;
+}
+
+.padding-6 {
+    padding: 6px;
+}
+
+.padding-6-0 {
+    padding: 6px 0;
+}
+
+.padding-6-8 {
+    padding: 6px 8px;
+}
+
+.padding-0-6 {
+    padding: 0 6px;
+}
 
 .padding-default {
     padding: 8px 10px;
@@ -393,6 +431,21 @@ body.dark {
     color: var(--bg);
 }
 
+.bg-lineargradient-toright-pink-blue {
+    background: linear-gradient(to right, var(--bg-lineargraduent-toright-pink-blue));
+    color: white;
+}
+
+.bg-op {
+    background: rgba(255, 255, 255, 0);
+}
+
+/* Color */
+
+.color-white {
+    color: white;
+}
+
 /* border */
 
 .border {
@@ -407,12 +460,20 @@ body.dark {
     border-bottom: 1px solid var(--br-bottom-op);
 }
 
+.border-right-op {
+    border-right: 1px solid var(--br-op);
+}
+
 .border-radius-default {
     border-radius: 12px;
 }
 
 .border-radius-16 {
     border-radius: 16px;
+}
+
+.border-radius-50 {
+    border-radius: 50px;
 }
 
 .border-op {
@@ -505,6 +566,10 @@ body.dark {
     gap: 50px;
 }
 
+.gap-uns {
+    gap: unset;
+}
+
 /* transform */
 
 .tranform-transY--65px {
@@ -525,6 +590,35 @@ body.dark {
 
 .z-index-1000 {
     z-index: 1000;
+}
+
+/* Tranform */
+
+.trans-scale102 {
+    transition: 0.3s ease-in-out;
+}
+
+.trans-scale102:hover {
+    transform: scale(1.02);
+}
+
+.trans-lateY--2px {
+    transform: translateY(0);
+    transition: 0.3s ease-in-out;
+}
+
+.trans-lateY--2px:hover {
+    transform: translateY(-2px);
+}
+
+.trans-lateY--2px-after {
+    transform: translateY(0);
+    transition: 0.3s ease-in-out;
+    position: relative;
+}
+
+.trans-lateY--2px-after:hover {
+    transform: translateY(-2px);
 }
 
 
@@ -641,6 +735,115 @@ body.dark {
     background: var(--bg-op-white);
 }
 
+.icn-contact-arw {
+    transition: 0.3s ease-in-out;
+    transform: rotate(0);
+}
+
+.icn-contact-arw.rotate {
+    transform: rotate(180deg);
+    transition: 0.3s ease-in-out;
+}
+
+.icn-contact i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    height: 26px;
+    width: 26px;
+    border-radius: 50%;
+}
+
+.icn-contact-items {
+    opacity: 0;
+    transform: translateY(-50px);
+    pointer-events: none;
+    z-index: -1;
+    transition: 0.5s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.icn-contact-items.dis {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: visible;
+    transition: 0.5s ease-in-out, opacity 0.8s ease-in-out;
+}
+
+.icn-contact-items i {
+    text-decoration: none;
+    color: var(--clr);
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    justify-content: center;
+    height: 26px;
+    width: 26px;
+    outline: 1px solid var(--br-op);
+    border-radius: 50%;
+}
+
+.icn-contact-items a {
+    text-decoration: none;
+}
+
+.icn-contact-items-op1 i {
+    color: var(--clr);
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    justify-content: center;
+    height: 26px;
+    width: 26px;
+    outline: 1px solid var(--br-op);
+    border-radius: 50%;
+}
+
+.icn-contact-items-op1 a {
+    text-decoration: none;
+}
+
+/*-------- ClassName brandIcon -------- */
+
+.fa-whatsapp,
+.fa-instagram,
+.fa-youtube,
+.fa-twitter,
+.fa-x-twitter,
+.fa-tiktok {
+    transition: 0.3s ease-in-out;
+}
+
+.fa-whatsapp:hover {
+    background: linear-gradient(to right, green, white);
+    transform: translateY(-2px);
+}
+
+.fa-instagram:hover {
+    background: linear-gradient(to right, rgb(255, 172, 186), rgb(148, 7, 148));
+    transform: translateY(-2px);
+}
+
+.fa-youtube:hover {
+    background: linear-gradient(to left, red, white);
+    transform: translateY(-2px);
+}
+
+.fa-twitter:hover {
+    background: linear-gradient(to left, rgb(42, 151, 240), white);
+    transform: translateY(-2px);
+}
+
+.fa-x-twitter:hover {
+    background: linear-gradient(to right, black, white);
+    transform: translateY(-2px);
+}
+
+.fa-tiktok:hover {
+    background: linear-gradient(to right, white, black);
+    transform: translateY(-2px);
+}
+
 /*-------- ClassName navigasi -------- */
 
 .navigation {
@@ -672,6 +875,22 @@ body.dark {
 
 .item-link:hover::after {
     width: 100%;
+}
+
+.trans-lateY--2px-after::after {
+    position: absolute;
+    content: '';
+    width: 0;
+    bottom: -2px;
+    height: 2px;
+    right: 50%;
+    background: radial-gradient(circle at center, var(--bg-radialgradient-center-purple-white));
+    transform: translateX(50%);
+    transition: 0.4s ease-in-out;
+}
+
+.trans-lateY--2px-after:hover::after {
+    width: 80%;
 }
 
 .txt-decoration-none a {
@@ -820,6 +1039,7 @@ button {
 }
 
 .btn-explore::before,
+.btn-navi-none::before,
 .btn-navi::before {
     position: absolute;
     content: '';
@@ -832,6 +1052,7 @@ button {
 }
 
 .btn-explore:hover::before,
+.btn-navi-none:hover::before,
 .btn-navi:hover::before {
     left: 150%;
 }
@@ -842,7 +1063,12 @@ button {
 }
 
 .btn-navi {
-    padding: 8px 16px;
+    padding: 6px 14px;
+    transition: 0.3s ease-in-out;
+    overflow: hidden;
+}
+
+.btn-navi-none {
     transition: 0.3s ease-in-out;
     overflow: hidden;
 }
