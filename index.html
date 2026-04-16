@@ -94,22 +94,26 @@
                                     class="fa-regular fa-circle-user"></i>
                                 Contact</button>
                         </div>
-                        <div id="toggle-contact" class="icn-contact">
-                            <i class="icn-contact-arw fa-solid fa-angle-down"></i>
+                        <div id="toggle-contact" class="icn-contact dis-grid">
+                            <div>
+                                <i class="icn-contact-arw fa-solid fa-angle-down"></i>
+                            </div>
                             <div
-                                class="icn-contact-items dis-flex pos-absolute border-op border-radius-50 top-50px padding-6-8">
-                                <a href="https://youtube.com"><i class="fa-brands fa-whatsapp"></i></a>
-                                <a href="https://youtube.com"><i class="fa-brands fa-instagram"></i></a>
-                                <a href="https://youtube.com"><i class="fa-brands fa-youtube"></i></a>
-                                <a href="https://youtube.com"><i class="fa-brands fa-twitter"></i></a>
-                                <a href="https://youtube.com"><i class="fa-brands fa-x-twitter"></i></a>
-                                <a href="https://youtube.com"><i class="fa-brands fa-tiktok"></i></a>
+                                class="icn-contact-items dis-flex pos-absolute br-op-up border-radius-50 top-50px padding-6-8">
+                                <div class="dis-flex">
+                                    <a href="https://youtube.com"><i class="fa-brands fa-whatsapp"></i></a>
+                                    <a href="https://youtube.com"><i class="fa-brands fa-instagram"></i></a>
+                                    <a href="https://youtube.com"><i class="fa-brands fa-youtube"></i></a>
+                                    <a href="https://youtube.com"><i class="fa-brands fa-twitter"></i></a>
+                                    <a href="https://youtube.com"><i class="fa-brands fa-x-twitter"></i></a>
+                                    <a href="https://youtube.com"><i class="fa-brands fa-tiktok"></i></a>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="dis-flex">
                         <button type="button" id="btn-cart"
-                            class="btn-navi pos-relative font-size-12px bg-dark border-op border-radius-16 padding-default"><i
+                            class="btn-toggle-chart btn-navi pos-relative font-size-12px bg-dark border-op border-radius-16 padding-default"><i
                                 class="fa-solid fa-bag-shopping"></i>
                             Cart</button>
                         <button type="button" id="toggle-mode"
@@ -154,7 +158,7 @@
                         <form class="width-65">
                             <input id="input-search-items" type="search"
                                 class="inp-explore width-100 padding-default border-radius-16 bg-op-white backdrop-filter-blur"
-                                placeholder="Cari Apaan wkwkw?">
+                                placeholder="Cari Apaan wkwkw?" onclick="scrolltoId('explore')">
                         </form>
                         <div>
                             <button type="button" onclick="scrolltoId('explore')" id="id-btn-explore"
@@ -165,7 +169,7 @@
                             <i id="icon-toggle-search" class="icn-arw fa-solid fa-angle-down"></i>
                         </div>
                     </div>
-                    <div class="dis-grid justify-left padding-top-30 grid-temp-clm-r3 gap-14">
+                    <div class="dis-grid align-items-inherit justify-left padding-top-30 grid-temp-clm-r3 gap-14">
                         <div class="reveal-right">
                             <div class="card-advanced border-op border-radius-default">
                                 <i class="fa-solid fa-truck-fast padding-bottom-16"></i>
@@ -194,12 +198,12 @@
                         class="card bg-op-white br-op-ex card-ExLarge border-radius-default backdrop-filter-blur max-width-340">
                         <div class="card-large bg-op-dark border-radius-default">
                             <div class="dis-flex justify-sb">
-                                <p class="font-size-11px">Featured launch</p>
+                                <p class="font-size-11px p-gry-custom">Featured launch</p>
                                 <span class="font-size-11px"><i class="fa-regular fa-star"></i> 4.8 Rate</span>
                             </div>
 
                             <p class="margin font-size-24px padding-bottom-28">Newbie Edition</p>
-                            <p class="font-size-11px">Limited drop</p>
+                            <p class="font-size-11px p-gry-custom">Limited drop</p>
                             <p class="margin padding-bottom-28">Curated set</p>
                             <p class="font-size-11px width-75">Tampilan editorial dengan depth lembut, highlight
                                 glassmorphism, dan fokus visual yang jelas.
@@ -286,11 +290,11 @@
                         </div>
                     </div>
                     <div class="dis-flex width-30">
-                        <input id="input-search-items1" type="search"
+                        <input id="trim-id-input-search-items" type="search"
                             class="inp-explore width-100 padding-default border-radius-16 bg-op-white backdrop-filter-blur"
                             placeholder="Cari Apaan wkwkw?">
                     </div>
-                    <div class="dis-flex gap-14">
+                    <div class="dis-flex align-items-inherit gap-14">
                         <button id="all-item" class="btn-items btn-small bg-white dark border-op border-radius-16"
                             data-filter="all"><i class="fa-solid fa-layer-group"></i> All</button>
                         <button id="items-hardware" class="btn-items btn-small bg-white border-op border-radius-16"
@@ -305,7 +309,7 @@
                 </div>
             </div>
             <div class="max-width-1120 margin-auto padding-top-30">
-                <div class="dis-grid grid-temp-clm-r3-2 gap-24">
+                <div class="dis-grid align-items-inherit grid-temp-clm-r3-2 gap-24">
                     <div class="dis-blk-itm-hard search-items card-advanced-purple border-op-purple border-radius-default"
                         data-category="hardware">
                         <article class="text">
@@ -316,7 +320,8 @@
                             <div class="text">
                                 <h4><i class="fa-solid fa-display"></i> Cpu</h4>
                                 <p class="font-size-12px">Cpu</p>
-                                <p class="font-size-14px">Kinerja yang optimal dalam melakukan tugas.</p>
+                                <p class="font-size-14px">Chipset Modern Befokus dalam Multitasking Aktifitas.
+                                </p>
                             </div>
                         </article>
                         <footer class="dis-flex justify-sb">
@@ -335,7 +340,7 @@
                             <div class="text">
                                 <h4><i class="fa-solid fa-display"></i> Gpu</h4>
                                 <p class="font-size-12px">Gpu</p>
-                                <p class="font-size-14px">Rendering yang mendukung resolusi Tinggi.</p>
+                                <p class="font-size-14px">Rendering Up To 4K dan mendukung resolusi Tinggi.</p>
                             </div>
                         </article>
                         <footer class="dis-flex justify-sb">
@@ -411,8 +416,7 @@
                             <div class="text">
                                 <h4><i class="fa-solid fa-question"></i> Asv</h4>
                                 <p class="font-size-12px">Ex</p>
-                                <p class="font-size-14px">Produk dirancang untuk eksplorasi konsep dan efisiensi
-                                    penggunaan.</p>
+                                <p class="font-size-14px">Produk dirancang tuk eksplorasi konsep dan efisiensi.</p>
                             </div>
                         </article>
                         <footer class="dis-flex justify-sb">
@@ -428,7 +432,7 @@
         <!--About on Web-->
         <!---->
         <section aria-labelledby="about-title" class="padding-20-20">
-            <div class="max-width-1120 dis-grid grid-temp-clm-r2 align-items-base margin-auto gap-24">
+            <div class="max-width-1120 dis-grid grid-temp-clm-r2 align-items-inherit margin-auto gap-24">
                 <div class="card-large border-op-pink padding-30-30 border-op-pink border-radius-16">
                     <div>
                         <h2 id="about-title" class="font-size-12px p-gry-custom margin padding-bottom-8"></h2>
@@ -467,8 +471,8 @@
                             </div>
                         </div>
                         <div>
-                            <button id="btn-cart-footer"
-                                class="btn-small bg-dark border-op border-radius-default font-size-10px">Open
+                            <button
+                                class="btn-toggle-chart btn-small bg-dark border-op border-radius-default font-size-10px">Open
                                 Cart</button>
                         </div>
                     </div>
@@ -476,7 +480,6 @@
                     <div class="card-advanced border-op border-radius-default">
                         <p class="font-size-11px">Belum ada item di keranjang. Pilih produk yang menarik perhatian.</p>
                     </div>
-                    <div class="padding-bottom-36"></div>
                 </div>
             </div>
         </section>

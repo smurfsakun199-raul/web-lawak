@@ -18,6 +18,7 @@
     --br: black;
     --br-op-ex: #fdfdfd2b;
     --br-op: rgba(0, 0, 0, 0.274);
+    --br-op-up: #00000024;
     --br-op-blue: rgba(0, 88, 255, 0.28);
     --br-op-pink: rgba(255, 0, 242, 0.28);
     --br-op-cyan: rgba(0, 225, 255, 0.28);
@@ -37,10 +38,10 @@ body {
     box-sizing: border-box;
     background: var(--bg);
     color: var(--clr);
-    font-family: "Comic Sans MS",
+    font-family: 'Inter',
+        "Comic Sans MS",
         "Comic Sans",
         ui-sans-serif,
-        system-ui,
         sans-serif,
         "Apple Color Emoji",
         "Segoe UI Emoji",
@@ -64,6 +65,7 @@ body.dark {
     --bg-radialgradient-center-purple-white: #e14dc3,
         #000000;
     --br-op: rgba(255, 255, 255, 0.274);
+    --br-op-up: #ffffff24;
     --br-bottom-op: rgba(255, 255, 255, 0.12);
     --btn-explore: rgba(255, 255, 255, 0.92);
 }
@@ -130,6 +132,10 @@ body.dark {
 
 .align-items-base {
     align-items: baseline;
+}
+
+.align-items-inherit {
+    align-items: inherit;
 }
 
 .justify-sb {
@@ -474,6 +480,10 @@ body.dark {
     border-radius: 16px;
 }
 
+.border-radius-24 {
+    border-radius: 28px;
+}
+
 .border-radius-50 {
     border-radius: 50px;
 }
@@ -500,6 +510,10 @@ body.dark {
 
 .br-op-ex {
     border: 1px solid var(--br-op-ex);
+}
+
+.br-op-up {
+    border: 0.5px solid var(--br-op-up);
 }
 
 .rmv-border {
@@ -779,9 +793,9 @@ body.dark {
     align-items: center;
     cursor: pointer;
     justify-content: center;
-    height: 26px;
-    width: 26px;
-    outline: 1px solid var(--br-op);
+    height: 30px;
+    width: 30px;
+    outline: 1px solid var(--br-op-up);
     border-radius: 50%;
 }
 
@@ -797,7 +811,7 @@ body.dark {
     justify-content: center;
     height: 26px;
     width: 26px;
-    outline: 1px solid var(--br-op);
+    outline: 1px solid var(--br-op-up);
     border-radius: 50%;
 }
 
@@ -1191,12 +1205,20 @@ button {
         height: 200px;
     }
 
+    .top-50px {
+        top: 60px;
+    }
+
     .width-30 {
         width: 100%;
     }
 
     .max-width-24rm {
         max-width: 18rem;
+    }
+
+    .max-width-340 {
+        max-width: unset;
     }
 
     .padding-top-70 {

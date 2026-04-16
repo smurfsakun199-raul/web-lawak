@@ -40,7 +40,7 @@ function scrolltoId(idtarget) {
 // Search Items // 
 
 const classearchitems = document.querySelectorAll('.search-items');
-const inputsearchitems = document.querySelectorAll('#input-search-items');
+const inputsearchitems = document.getElementById('input-search-items');
 const idcrtsearch = document.getElementById('cr-searchnw');
 const idtgsearch = document.getElementById('toggle-search');
 const icntgsearch = document.getElementById('icon-toggle-search');
@@ -58,6 +58,7 @@ idtgsearch.addEventListener('click', () => {
     icnarw.classList.toggle('icn-rotate180deg');
 });
 
+/*
 inputsearchitems.forEach(inp => {
     inp.addEventListener('input', () => {
         const filter = inp.value.toLowerCase();
@@ -68,6 +69,31 @@ inputsearchitems.forEach(inp => {
                 .join(' ');
 
             card.classList.toggle('hidden', !elementh3.includes(filter));
+        });
+    });
+});*/
+
+const inpexplore = document.querySelectorAll('.inp-explore');
+const event_inp_clck_cntxmn = ['input', 'click', 'contextmenu'];
+
+event_inp_clck_cntxmn.forEach(evt => {
+    document.getElementById('trim-id-input-search-items').addEventListener(evt, () => {
+        inputsearchitems.value = '';
+    });
+});
+
+inpexplore.forEach(inp => {
+    inp.addEventListener('input', () => {
+        const filter = inp.value.toLowerCase();
+
+        document.getElementById('trim-id-input-search-items').value = inp.value;
+
+        classearchitems.forEach(props => {
+            const card = [...props.querySelectorAll('h3, h4')]
+                .map(text => text.textContent.toLowerCase())
+                .join(' ');
+
+            props.classList.toggle('hidden', !card.includes(filter));
         });
     });
 });
@@ -103,8 +129,8 @@ revealrighttrs1t2s.forEach((revealrighttrs1t2s) => {
 });
 // Button Chart //
 
-const btnchart = document.querySelectorAll('#btn-cart');
-const itembtncart = document.querySelectorAll('#addtocart');
+const btnchart = document.querySelectorAll('.btn-toggle-chart');
+const itembtncart = document.querySelectorAll('.addtocart');
 const slideright = document.querySelector('.slide-right');
 
 btnchart.forEach(btn => {
