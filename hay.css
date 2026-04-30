@@ -1221,6 +1221,10 @@ button {
         max-width: unset;
     }
 
+    .max-width-nav {
+        max-width: unset;
+    }
+
     .padding-top-70 {
         padding-top: 40px;
     }
